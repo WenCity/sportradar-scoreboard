@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "./dist",
+    "rootDir": ".",
+    "strict": true,
+    "esModuleInterop": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "@scoreboard/*": ["src/scoreboard/*"],
+      "@utils/*": ["utils/*"],
+      "@interface/*": ["src/model/*"]
+    }
+  },
+  "include": ["src", "demo.ts", "test", "utils", "utils"]
+}
