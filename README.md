@@ -5,6 +5,10 @@ Welcome.
 ## Getting Started
 
 ```bash
+git clone https://github.com/WenCity/sportradar-scoreboard.git
+```
+
+```bash
 npm install
 npm start
 ```
