@@ -21,5 +21,9 @@
     "tsx": "^4.19.4",
     "typescript": "^5.3.3",
     "wait-on": "^7.2.0"
+  },
+  "overrides": {
+    "glob": "^9.0.0",
+    "inflight": "npm:@npmcli/inflight@2.0.0"
   }
 }
