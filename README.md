@@ -29,6 +29,20 @@ npm run demo
 
 This just runs the demo and prints a final scoreboard summary to the terminal. No memory tracking.
 
+## Demo Configuration
+
+To tweak the behavior of the live scoreboard demo, edit the match list in [`src/demo.ts`](./src/demo.ts):
+
+```ts
+const matches: [string, string, number, number][] = [
+  ["Mexico", "Canada", 0, 5],
+  ["Spain", "Brazil", 10, 2],
+  ["Germany", "France", 2, 2],
+  ["Uruguay", "Italy", 6, 6],
+  ["Argentina", "Australia", 3, 1],
+];
+```
+
 ## Code Flow
 
 - `Scoreboard.ts` – main logic: start, update, finish, get summary
