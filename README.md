@@ -9,6 +9,12 @@ npm install
 npm start
 ```
 
+## Test
+
+```bash
+npm test
+```
+
 This runs the demo and opens `http://localhost:8080` to show what happens after each operation (start match, update score, finish match). It shows actual in-memory state after each step.
 
 ## If you only want the console output
