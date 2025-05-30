@@ -1,24 +1,33 @@
-# Sportradar Live Scoreboard Library
+# Sportradar Scoreboard Demo
 
-A cleanly architected TypeScript library that manages live World Cup football matches with object-oriented design, TDD, and best engineering practices — inspired by Sportradar's Odds Tribe.
-
-## Features
-
-- Start, update, and finish matches in memory
-- Summary list ordered by total score, then recency
-- 100% test coverage with Jest
-- Designed for React, cloud, and future service integrations
+Welcome.
 
 ## Getting Started
 
 ```bash
 npm install
-npm test
+npm start
 ```
 
-## Design Principles
+This runs the demo and opens `http://localhost:8080` to show what happens after each operation (start match, update score, finish match). It shows actual in-memory state after each step.
 
-- Clean code with encapsulated logic (Match, Scoreboard)
-- TDD with expressive test names
-- OOP with clear separation of domain and service
-- No framework dependencies
+## If you only want the console output
+
+```bash
+npm run demo
+```
+
+This just runs the demo and prints a final scoreboard summary to the terminal. No memory tracking.
+
+## Code Flow
+
+- `Scoreboard.ts` – main logic: start, update, finish, get summary
+- `Match.ts` – defines a football match
+- `demo.ts` – runs a fixed sequence of operations
+- `monitor.ts` – runs the same but tracks memory after each step
+- `output.ts` – handles formatting only
+- `test/Scoreboard.test.ts` – covers all edge cases
+
+## Why this setup
+
+I wanted one clear path to run the logic (`demo.ts`) and one way to inspect the memory changes (`monitor.ts`). Clean output, real state. No unnecessary layers.
